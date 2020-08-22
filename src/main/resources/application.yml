@@ -1,0 +1,9 @@
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5444/efca
+    password: efca
+    username: efca
+  flyway:
+    password: efca
+    user: efca
+    url: jdbc:postgresql://localhost:5444/efca
