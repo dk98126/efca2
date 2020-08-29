@@ -8,3 +8,6 @@ spring:
     user: efca
     password: efca
     change-log: classpath:db/changelog/db.changelog-master.xml
+  redis:
+    host: localhost
+    port: 6377

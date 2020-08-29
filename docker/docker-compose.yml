@@ -11,3 +11,9 @@ services:
       POSTGRES_DB: efca
       POSTGRES_USER: efca
       POSTGRES_PASSWORD: efca
+  redis:
+    image: redis:latest
+    restart: always
+    container_name: efca_redis
+    ports:
+    - 6377:6379
