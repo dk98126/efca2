@@ -8,7 +8,7 @@ import kotlinx.coroutines.reactive.awaitFirstOrNull
 import kotlinx.coroutines.reactive.awaitSingle
 import org.springframework.web.bind.annotation.*
 
-@RestController()
+@RestController
 @RequestMapping("/user")
 class UserController(private val userRepo: UserRepo) {
     @GetMapping("/all")

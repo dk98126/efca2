@@ -26,3 +26,11 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: efca
       MONGO_INITDB_ROOT_PASSWORD: efca
+
+  backend:
+    image: efca-back:latest
+    container_name: efca-back
+    ports:
+    - 8080:8080
+    environment:
+      SPRING_PROFILES_ACTIVE: docker

@@ -1,0 +1,12 @@
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://efca_db/efca
+  liquibase:
+    url: jdbc:postgresql://efca_db:5432/efca
+  redis:
+    host: efca_redis
+    port: 6379
+  data:
+    mongodb:
+      host: efca_mongo
+      port: 27017
