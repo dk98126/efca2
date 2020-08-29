@@ -11,3 +11,9 @@ spring:
   redis:
     host: localhost
     port: 6377
+  data:
+    mongodb:
+      host: localhost
+      port: 27018
+      username: efca
+      password: efca
