@@ -1,5 +1,4 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-import org.jetbrains.kotlin.util.profile
 import org.springframework.boot.gradle.tasks.bundling.BootBuildImage
 
 plugins {
@@ -23,6 +22,8 @@ repositories {
 }
 
 dependencies {
+    val springDocOpenApiVersion = "1.4.5"
+
 //    spring
     implementation("org.springframework.boot:spring-boot-starter")
     implementation("org.springframework.boot:spring-boot-starter-webflux")
@@ -30,6 +31,7 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-jdbc")
     implementation("org.springframework.boot:spring-boot-starter-data-redis")
     implementation("org.springframework.boot:spring-boot-starter-data-mongodb-reactive")
+    implementation("org.springdoc:springdoc-openapi-webflux-ui:$springDocOpenApiVersion")
 
 //    db
     implementation("org.postgresql:postgresql")
