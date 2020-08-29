@@ -1,9 +1,10 @@
 spring:
   r2dbc:
     url: r2dbc:postgresql://localhost:5444/efca
-    password: efca
     username: efca
-  flyway:
     password: efca
-    user: efca
+  liquibase:
     url: jdbc:postgresql://localhost:5444/efca
+    user: efca
+    password: efca
+    change-log: classpath:db/changelog/db.changelog-master.xml

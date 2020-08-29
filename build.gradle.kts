@@ -30,7 +30,7 @@ dependencies {
 //    db
     implementation("org.postgresql:postgresql")
     implementation("io.r2dbc:r2dbc-postgresql")
-    implementation("org.flywaydb:flyway-core")
+    implementation("org.liquibase:liquibase-core")
 
 //    kotlin
     implementation("org.jetbrains.kotlin:kotlin-reflect")
